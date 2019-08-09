@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB0D271A22FD097400481578 /* Metallic.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0D271822FD097400481578 /* Metallic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB0D272822FD098200481578 /* MetalArray.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0D272022FD098200481578 /* MetalArray.m */; };
+		EB0D272922FD098200481578 /* MetalArray.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0D272122FD098200481578 /* MetalArray.h */; };
+		EB0D272A22FD098200481578 /* exp.metal in Sources */ = {isa = PBXBuildFile; fileRef = EB0D272222FD098200481578 /* exp.metal */; };
+		EB0D272B22FD098200481578 /* MetalOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0D272322FD098200481578 /* MetalOperation.m */; };
+		EB0D272C22FD098200481578 /* MetalOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0D272422FD098200481578 /* MetalOperation.h */; };
+		EB0D272D22FD098200481578 /* add.metal in Sources */ = {isa = PBXBuildFile; fileRef = EB0D272522FD098200481578 /* add.metal */; };
+		EB0D272E22FD098200481578 /* sub.metal in Sources */ = {isa = PBXBuildFile; fileRef = EB0D272622FD098200481578 /* sub.metal */; };
+		EB0D272F22FD098200481578 /* square.metal in Sources */ = {isa = PBXBuildFile; fileRef = EB0D272722FD098200481578 /* square.metal */; };
+		EB0D273222FD099300481578 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0D273122FD099300481578 /* Metal.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EB0D271522FD097400481578 /* Metallic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Metallic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB0D271822FD097400481578 /* Metallic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Metallic.h; sourceTree = "<group>"; };
+		EB0D271922FD097400481578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB0D272022FD098200481578 /* MetalArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetalArray.m; sourceTree = "<group>"; };
+		EB0D272122FD098200481578 /* MetalArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetalArray.h; sourceTree = "<group>"; };
+		EB0D272222FD098200481578 /* exp.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = exp.metal; sourceTree = "<group>"; };
+		EB0D272322FD098200481578 /* MetalOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetalOperation.m; sourceTree = "<group>"; };
+		EB0D272422FD098200481578 /* MetalOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetalOperation.h; sourceTree = "<group>"; };
+		EB0D272522FD098200481578 /* add.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = add.metal; sourceTree = "<group>"; };
+		EB0D272622FD098200481578 /* sub.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = sub.metal; sourceTree = "<group>"; };
+		EB0D272722FD098200481578 /* square.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = square.metal; sourceTree = "<group>"; };
+		EB0D273122FD099300481578 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB0D271222FD097400481578 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB0D273222FD099300481578 /* Metal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB0D270B22FD097400481578 = {
+			isa = PBXGroup;
+			children = (
+				EB0D271722FD097400481578 /* Metallic */,
+				EB0D271622FD097400481578 /* Products */,
+				EB0D273022FD099300481578 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EB0D271622FD097400481578 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB0D271522FD097400481578 /* Metallic.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB0D271722FD097400481578 /* Metallic */ = {
+			isa = PBXGroup;
+			children = (
+				EB0D272422FD098200481578 /* MetalOperation.h */,
+				EB0D272322FD098200481578 /* MetalOperation.m */,
+				EB0D272122FD098200481578 /* MetalArray.h */,
+				EB0D272022FD098200481578 /* MetalArray.m */,
+				EB0D272722FD098200481578 /* square.metal */,
+				EB0D272222FD098200481578 /* exp.metal */,
+				EB0D272522FD098200481578 /* add.metal */,
+				EB0D272622FD098200481578 /* sub.metal */,
+				EB0D271822FD097400481578 /* Metallic.h */,
+				EB0D271922FD097400481578 /* Info.plist */,
+			);
+			path = Metallic;
+			sourceTree = "<group>";
+		};
+		EB0D273022FD099300481578 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB0D273122FD099300481578 /* Metal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EB0D271022FD097400481578 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB0D272C22FD098200481578 /* MetalOperation.h in Headers */,
+				EB0D272922FD098200481578 /* MetalArray.h in Headers */,
+				EB0D271A22FD097400481578 /* Metallic.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EB0D271422FD097400481578 /* Metallic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB0D271D22FD097400481578 /* Build configuration list for PBXNativeTarget "Metallic" */;
+			buildPhases = (
+				EB0D271022FD097400481578 /* Headers */,
+				EB0D271122FD097400481578 /* Sources */,
+				EB0D271222FD097400481578 /* Frameworks */,
+				EB0D271322FD097400481578 /* Resources */,
+				EB0D273322FD0AC200481578 /* Copy Framework */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Metallic;
+			productName = Metallic;
+			productReference = EB0D271522FD097400481578 /* Metallic.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB0D270C22FD097400481578 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Jack Cook";
+				TargetAttributes = {
+					EB0D271422FD097400481578 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = EB0D270F22FD097400481578 /* Build configuration list for PBXProject "Metallic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EB0D270B22FD097400481578;
+			productRefGroup = EB0D271622FD097400481578 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB0D271422FD097400481578 /* Metallic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB0D271322FD097400481578 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EB0D273322FD0AC200481578 /* Copy Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Framework";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -rf ${PROJECT_DIR}/Metallic.framework\ncp -r ${PROJECT_DIR}/DerivedData/Metallic/Build/Products/Debug/Metallic.framework ${PROJECT_DIR}/Metallic.framework\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB0D271122FD097400481578 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB0D272E22FD098200481578 /* sub.metal in Sources */,
+				EB0D272A22FD098200481578 /* exp.metal in Sources */,
+				EB0D272F22FD098200481578 /* square.metal in Sources */,
+				EB0D272D22FD098200481578 /* add.metal in Sources */,
+				EB0D272822FD098200481578 /* MetalArray.m in Sources */,
+				EB0D272B22FD098200481578 /* MetalOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EB0D271B22FD097400481578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EB0D271C22FD097400481578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EB0D271E22FD097400481578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 59PUM5CV3T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Metallic/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jackcook.Metallic;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EB0D271F22FD097400481578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 59PUM5CV3T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Metallic/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jackcook.Metallic;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB0D270F22FD097400481578 /* Build configuration list for PBXProject "Metallic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB0D271B22FD097400481578 /* Debug */,
+				EB0D271C22FD097400481578 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB0D271D22FD097400481578 /* Build configuration list for PBXNativeTarget "Metallic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB0D271E22FD097400481578 /* Debug */,
+				EB0D271F22FD097400481578 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB0D270C22FD097400481578 /* Project object */;
+}

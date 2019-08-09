@@ -1,0 +1,15 @@
+# Python
+*.py[cod]
+__pycache__/
+metallic.egg-info/
+
+# macOS
+.DS_Store
+
+# Xcode
+DerivedData/
+xcuserdata/
+*.xcuserstate
+
+# Project
+Metallic.framework/
