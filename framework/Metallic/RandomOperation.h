@@ -12,6 +12,10 @@
 
 @interface RandomOperation : NSObject
 
+- (instancetype) init;
 - (MetalArray *) generateRandom:(unsigned long) size;
+- (MetalArray *) generateRandomNormal:(unsigned long) size;
+- (MetalArray *) generateRandomIntegers:(int) low high:(int) high size:(unsigned long) size;
+- (MetalArray *) generateRandomIntegers:(int)low high:(int)high size:(unsigned long)size replacement:(bool) replacement;
 
 @end

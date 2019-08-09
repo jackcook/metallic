@@ -21,6 +21,7 @@
 		EB2AED3322FD46AA00BEB894 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2AED3222FD46AA00BEB894 /* Accelerate.framework */; };
 		EB2AED3722FD559100BEB894 /* AccelerateOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2AED3622FD559100BEB894 /* AccelerateOperation.m */; };
 		EB2AED3A22FD564200BEB894 /* RandomOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2AED3922FD564200BEB894 /* RandomOperation.m */; };
+		EB2AED3D22FD5AEC00BEB894 /* randn.metal in Sources */ = {isa = PBXBuildFile; fileRef = EB2AED3C22FD5AEC00BEB894 /* randn.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		EB2AED3822FD559A00BEB894 /* AccelerateOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccelerateOperation.h; sourceTree = "<group>"; };
 		EB2AED3922FD564200BEB894 /* RandomOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomOperation.m; sourceTree = "<group>"; };
 		EB2AED3B22FD564800BEB894 /* RandomOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomOperation.h; sourceTree = "<group>"; };
+		EB2AED3C22FD5AEC00BEB894 /* randn.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = randn.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				EB0D272522FD098200481578 /* add.metal */,
 				EB0D272622FD098200481578 /* sub.metal */,
 				EB2AED2C22FD20DE00BEB894 /* trig.metal */,
+				EB2AED3C22FD5AEC00BEB894 /* randn.metal */,
 				EB0D271822FD097400481578 /* Metallic.h */,
 				EB0D271922FD097400481578 /* Info.plist */,
 			);
@@ -208,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB0D272E22FD098200481578 /* sub.metal in Sources */,
+				EB2AED3D22FD5AEC00BEB894 /* randn.metal in Sources */,
 				EB2AED3722FD559100BEB894 /* AccelerateOperation.m in Sources */,
 				EB2AED3A22FD564200BEB894 /* RandomOperation.m in Sources */,
 				EB0D272A22FD098200481578 /* exp.metal in Sources */,

@@ -70,15 +70,19 @@
 }
 
 - (MetalArray *) computeWithArrays:(NSArray *)arrays {
-    // Allocate buffers to hold our initial data and the result.
     id<MTLBuffer> metalArrayBuffers[arrays.count];
     
     for (int i = 0; i < arrays.count; i++) {
         metalArrayBuffers[i] = ((MetalArray *) arrays[i]).buffer;
     }
     
-    _arrayLength = ((MetalArray *) arrays[0]).length;
-    _inputBuffers = [NSArray arrayWithObjects:metalArrayBuffers count:arrays.count];
+    NSArray *arr = [NSArray arrayWithObjects:metalArrayBuffers count:arrays.count];
+    return [self computeWithBuffers:arr length:((MetalArray *) arrays[0]).length];
+}
+
+- (MetalArray *) computeWithBuffers:(NSArray *)buffers length:(unsigned long) length {
+    _arrayLength = length;
+    _inputBuffers = buffers;
     
     unsigned long bufferSize = _arrayLength * sizeof(float);
     _mBufferResult = [_mDevice newBufferWithLength:bufferSize options:MTLResourceStorageModeShared];

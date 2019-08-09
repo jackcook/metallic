@@ -15,5 +15,7 @@
 
 - (instancetype) initWithOperation:(NSString *) opName;
 - (MetalArray *) computeWithArrays:(NSArray *)arrays;
+- (MetalArray *) computeWithBuffers:(NSArray *)buffers length:(unsigned long) length;
+
 
 @end
