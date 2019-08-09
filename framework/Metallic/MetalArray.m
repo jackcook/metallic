@@ -43,8 +43,7 @@
 }
 
 - (float)itemAtIndex:(int)index {
-    float *ptr = self.buffer.contents;
-    return ptr[index];
+    return ((float *) self.buffer.contents)[index];
 }
 
 @end

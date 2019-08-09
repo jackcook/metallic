@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 //! Project version number for Metallic.
-FOUNDATION_EXPORT double MetallicVersionNumber;
+FOUNDATION_EXPORT float MetallicVersionNumber;
 
 //! Project version string for Metallic.
 FOUNDATION_EXPORT const unsigned char MetallicVersionString[];

@@ -5,6 +5,7 @@ metallic.egg-info/
 
 # macOS
 .DS_Store
+*.swp
 
 # Xcode
 DerivedData/

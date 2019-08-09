@@ -6,10 +6,8 @@
 //  Copyright © 2019 Apple. All rights reserved.
 //
 
+#import <Accelerate/Accelerate.h>
 #import "MetalOperation.h"
-
-#define EXP "exp_array"
-#define SQUARE "square_array"
 
 @implementation MetalOperation {
     id<MTLDevice> _mDevice;

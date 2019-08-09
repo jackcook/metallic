@@ -47,16 +47,5 @@ class MetallicArray(list):
     def __sub__(self, other):
         return self.perform("sub_arrays", other.array)
 
-    def exp(self):
-        return self.perform("exp_array")
-
-    def square(self):
-        return self.perform("square_array")
-
-    def perform(self, operation, *args):
-        op = MetalOperation.alloc().initWithOperation_(operation)
-        arrays = NSArray.alloc().initWithObjects_(self.array, *args)
-        return MetallicArray(op.computeWithArrays_(arrays))
-
 def array(items):
     return MetallicArray(items)

@@ -17,6 +17,10 @@
 		EB0D272E22FD098200481578 /* sub.metal in Sources */ = {isa = PBXBuildFile; fileRef = EB0D272622FD098200481578 /* sub.metal */; };
 		EB0D272F22FD098200481578 /* square.metal in Sources */ = {isa = PBXBuildFile; fileRef = EB0D272722FD098200481578 /* square.metal */; };
 		EB0D273222FD099300481578 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0D273122FD099300481578 /* Metal.framework */; };
+		EB2AED2D22FD20DE00BEB894 /* trig.metal in Sources */ = {isa = PBXBuildFile; fileRef = EB2AED2C22FD20DE00BEB894 /* trig.metal */; };
+		EB2AED3322FD46AA00BEB894 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2AED3222FD46AA00BEB894 /* Accelerate.framework */; };
+		EB2AED3722FD559100BEB894 /* AccelerateOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2AED3622FD559100BEB894 /* AccelerateOperation.m */; };
+		EB2AED3A22FD564200BEB894 /* RandomOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2AED3922FD564200BEB894 /* RandomOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,12 @@
 		EB0D272622FD098200481578 /* sub.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = sub.metal; sourceTree = "<group>"; };
 		EB0D272722FD098200481578 /* square.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = square.metal; sourceTree = "<group>"; };
 		EB0D273122FD099300481578 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		EB2AED2C22FD20DE00BEB894 /* trig.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = trig.metal; sourceTree = "<group>"; };
+		EB2AED3222FD46AA00BEB894 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		EB2AED3622FD559100BEB894 /* AccelerateOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccelerateOperation.m; sourceTree = "<group>"; };
+		EB2AED3822FD559A00BEB894 /* AccelerateOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccelerateOperation.h; sourceTree = "<group>"; };
+		EB2AED3922FD564200BEB894 /* RandomOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomOperation.m; sourceTree = "<group>"; };
+		EB2AED3B22FD564800BEB894 /* RandomOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomOperation.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB2AED3322FD46AA00BEB894 /* Accelerate.framework in Frameworks */,
 				EB0D273222FD099300481578 /* Metal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,11 +80,16 @@
 				EB0D272422FD098200481578 /* MetalOperation.h */,
 				EB0D272322FD098200481578 /* MetalOperation.m */,
 				EB0D272122FD098200481578 /* MetalArray.h */,
+				EB2AED3622FD559100BEB894 /* AccelerateOperation.m */,
+				EB2AED3822FD559A00BEB894 /* AccelerateOperation.h */,
+				EB2AED3922FD564200BEB894 /* RandomOperation.m */,
+				EB2AED3B22FD564800BEB894 /* RandomOperation.h */,
 				EB0D272022FD098200481578 /* MetalArray.m */,
 				EB0D272722FD098200481578 /* square.metal */,
 				EB0D272222FD098200481578 /* exp.metal */,
 				EB0D272522FD098200481578 /* add.metal */,
 				EB0D272622FD098200481578 /* sub.metal */,
+				EB2AED2C22FD20DE00BEB894 /* trig.metal */,
 				EB0D271822FD097400481578 /* Metallic.h */,
 				EB0D271922FD097400481578 /* Info.plist */,
 			);
@@ -83,6 +99,7 @@
 		EB0D273022FD099300481578 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EB2AED3222FD46AA00BEB894 /* Accelerate.framework */,
 				EB0D273122FD099300481578 /* Metal.framework */,
 			);
 			name = Frameworks;
@@ -191,7 +208,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB0D272E22FD098200481578 /* sub.metal in Sources */,
+				EB2AED3722FD559100BEB894 /* AccelerateOperation.m in Sources */,
+				EB2AED3A22FD564200BEB894 /* RandomOperation.m in Sources */,
 				EB0D272A22FD098200481578 /* exp.metal in Sources */,
+				EB2AED2D22FD20DE00BEB894 /* trig.metal in Sources */,
 				EB0D272F22FD098200481578 /* square.metal in Sources */,
 				EB0D272D22FD098200481578 /* add.metal in Sources */,
 				EB0D272822FD098200481578 /* MetalArray.m in Sources */,
