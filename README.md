@@ -105,3 +105,7 @@ numpy: 89.8390s
 
 You'll notice that for arrays with only a few thousand elements, the overhead from copying elements between GPU and CPU memory outweighs the performance improvements.
 However, for larger arrays, `metallic` beats `numpy` by a wide margin.
+
+## License
+
+This repository is available under the MIT license. See the [LICENSE](/LICENSE.md) file for more details.
