@@ -2,6 +2,8 @@
 *.py[cod]
 __pycache__/
 metallic.egg-info/
+build/
+dist/
 
 # macOS
 .DS_Store
@@ -11,6 +13,3 @@ metallic.egg-info/
 DerivedData/
 xcuserdata/
 *.xcuserstate
-
-# Project
-Metallic.framework/

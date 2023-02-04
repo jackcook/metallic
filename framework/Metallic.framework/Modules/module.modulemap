@@ -1,0 +1,6 @@
+framework module Metallic {
+  umbrella header "Metallic.h"
+
+  export *
+  module * { export * }
+}
