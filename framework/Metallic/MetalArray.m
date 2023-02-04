@@ -22,6 +22,10 @@
     
     id<MTLDevice> device = MTLCreateSystemDefaultDevice();
     
+    if (device == NULL) {
+        device = [MTLCopyAllDevices() objectAtIndex:0];
+    }
+    
     self.buffer = [device newBufferWithLength:_bufferSize options:MTLResourceStorageModeShared];
     
     float *ptr = self.buffer.contents;

@@ -31,6 +31,10 @@
     if (self) {
         _mDevice = MTLCreateSystemDefaultDevice();
         
+        if (_mDevice == NULL) {
+            _mDevice = [MTLCopyAllDevices() objectAtIndex:0];
+        }
+        
         NSError* error = nil;
         
         // Load the shader files with a .metal file extension in the project

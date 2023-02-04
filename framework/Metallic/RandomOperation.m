@@ -19,6 +19,10 @@
     if (self) {
         _device = MTLCreateSystemDefaultDevice();
         
+        if (_device == NULL) {
+            _device = [MTLCopyAllDevices() objectAtIndex:0];
+        }
+        
         srand(arc4random());
     }
     
