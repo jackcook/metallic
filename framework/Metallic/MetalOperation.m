@@ -38,15 +38,14 @@
         NSError* error = nil;
         
         // Load the shader files with a .metal file extension in the project
-        NSURL *url = [NSURL fileURLWithPath:@"/Users/jackcook/Desktop/metallic/framework/Metallic.framework/Resources/default.metallib"];
+        NSURL *url = [[NSBundle bundleWithIdentifier:@"com.jackcook.Metallic"] URLForResource:@"default" withExtension:@"metallib"];
         id<MTLLibrary> defaultLibrary = [_mDevice newLibraryWithURL:url error:&error];
-
-//        id<MTLLibrary> defaultLibrary = [_mDevice newDefaultLibrary];
+        
         if (defaultLibrary == nil) {
             NSLog(@"Failed to find the default library.");
             return nil;
         }
-
+        
         id<MTLFunction> function = [defaultLibrary newFunctionWithName:opName];
         if (function == nil) {
             NSLog(@"Failed to find the %@ function.", opName);

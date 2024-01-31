@@ -22,7 +22,7 @@ However, if you are only interested in importing `metallic` and trying it out, y
 
 If you have trouble building the framework on the command line, you may also build it in Xcode (option 2, below).
 
-```
+```bash
 xcodebuild -project framework/Metallic.xcodeproj
 ```
 
@@ -77,7 +77,7 @@ Pretty cool!
 ## Benchmark
 
 The `test_speed.py` script runs the code above several times, along with its `numpy` equivalent, to make a speed comparison.
-Here are the results on my MacBook Pro 13" 2020 (i7 2.3GHz 4-core):
+Here are the results on an older MacBook Pro 13" 2020 (i7 2.3GHz 4-core):
 
 ```
 $ python test_speed.py
@@ -103,8 +103,34 @@ metallic: 34.7095s
 numpy: 89.8390s
 ```
 
+And here are the results on my MacBook Pro 14" 2023 (M2 Pro):
+
+```
+$ python test_speed.py
+
+Array size: 10 ** 4
+metallic: 0.1041s
+numpy: 0.0096s
+===
+Array size: 10 ** 5
+metallic: 0.2661s
+numpy: 0.0392s
+===
+Array size: 10 ** 6
+metallic: 0.3869s
+numpy: 0.4040s
+===
+Array size: 10 ** 7
+metallic: 2.2621s
+numpy: 4.0190s
+===
+Array size: 10 ** 8
+metallic: 27.6258s
+numpy: 42.7040s
+```
+
 You'll notice that for arrays with only a few thousand elements, the overhead from copying elements between GPU and CPU memory outweighs the performance improvements.
-However, for larger arrays, `metallic` beats `numpy` by a wide margin.
+However, for larger arrays, `metallic` beats `numpy` by a good margin.
 
 ## License
 
